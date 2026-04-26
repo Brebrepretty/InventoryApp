@@ -8,6 +8,17 @@ Users are able to create an account, log in securely, add items, update quantiti
 
 ---
 
+## Features
+
+- User authentication (login & account creation)
+- Full CRUD functionality (Create, Read, Update, Delete)
+- SQLite database for local storage
+- Inventory tracking with item name and quantity
+- SMS notification system for low inventory alerts
+- Permission handling (user can allow or deny SMS access)
+
+---
+
 ## User Needs & Goals
 
 This app was designed for users who need a straightforward way to track inventory. This could include students, small business owners, or anyone managing supplies at home.
@@ -30,15 +41,15 @@ To support user needs, the app includes the following screens:
   - Allows users to log in or create an account
 
 - **Inventory Dashboard**
-  - Add items
-  - Update item quantities
-  - Delete items
-  - View inventory list
+  - Add items  
+  - Update item quantities  
+  - Delete items  
+  - View inventory list  
 
 - **SMS Permission Screen**
-  - Allows users to enable or deny SMS notifications
+  - Allows users to enable or deny SMS notifications  
 
-The UI was designed to be clean and consistent across all screens. Buttons are clearly labeled, layouts are simple, and everything is easy to navigate. This makes the app user-friendly and reduces confusion.
+The UI was designed to be clean and consistent across all screens. Buttons are clearly labeled, layouts are simple, and everything is easy to navigate.
 
 ---
 
@@ -46,9 +57,7 @@ The UI was designed to be clean and consistent across all screens. Buttons are c
 
 When coding the app, I focused on building each feature step by step instead of trying to do everything at once. I used Java and SQLite to handle data storage and made sure each function (add, update, delete) worked properly before moving on.
 
-I also kept the code organized by separating responsibilities into different classes, like using a DatabaseHelper for database operations. This made the app easier to manage and debug.
-
-These strategies can be used in future projects because breaking things down into smaller parts makes development more efficient and less overwhelming.
+I also kept the code organized by separating responsibilities into different classes, such as using a `DatabaseHelper` for database operations. This made the app easier to manage and debug.
 
 ---
 
@@ -56,13 +65,13 @@ These strategies can be used in future projects because breaking things down int
 
 To test the app, I used the Android Emulator in Android Studio. I tested all major features including:
 
-- Logging in and creating accounts
-- Adding items to the database
-- Updating item quantities
-- Deleting items
-- SMS permission handling (allow and deny)
+- Logging in and creating accounts  
+- Adding items to the database  
+- Updating item quantities  
+- Deleting items  
+- SMS permission handling (allow and deny)  
 
-Testing is important because it helps catch errors early and ensures everything works as expected. During testing, I was able to confirm that the app continues to function even if SMS permission is denied, which improves user experience.
+Testing is important because it helps catch errors early and ensures everything works as expected. I confirmed that the app continues to function even if SMS permission is denied, which improves user experience.
 
 ---
 
@@ -70,7 +79,7 @@ Testing is important because it helps catch errors early and ensures everything 
 
 One challenge I faced was handling SMS permissions properly. I had to make sure the app would still work even if the user denied permission. To solve this, I implemented logic that allows the app to continue running normally without notifications.
 
-Another challenge was making sure the UI stayed consistent across different screens. I solved this by keeping the layout design simple and reusing similar styles for buttons and text.
+Another challenge was keeping the UI consistent across all screens. I solved this by using simple layouts and reusing styles for buttons and text.
 
 ---
 
@@ -78,10 +87,41 @@ Another challenge was making sure the UI stayed consistent across different scre
 
 The part of the app I was most successful with was the full CRUD functionality (Create, Read, Update, Delete). The app allows users to manage inventory smoothly, and all operations update correctly in the database.
 
-I also did well implementing user-centered design by keeping the interface simple, clean, and easy to use. The app focuses on functionality while still providing a good user experience.
+I also focused on user-centered design by keeping the interface clean, simple, and easy to use.
+
+---
+
+## App Screenshots
+
+### Login Screen
+![Login Screen](login.png)
+
+### Inventory Dashboard – Item Added
+![Item Added](add_item.png)
+
+### Inventory Dashboard – Item Updated
+![Item Updated](update_item.png)
+
+### Inventory Dashboard – Item Deleted
+![Item Deleted](delete_item.png)
+
+### SMS Permission – Allow
+![SMS Allow](sms_allow.png)
+
+### SMS Permission – Deny
+![SMS Deny](sms_deny.png)
+
+---
+
+## Tech Stack
+
+- Java  
+- Android Studio  
+- SQLite Database  
+- Android SDK  
 
 ---
 
 ## Conclusion
 
-This project demonstrates my ability to design and develop a functional mobile application using Android Studio, Java, and SQLite. It shows my understanding of user-centered design, problem solving, and building real-world applications.
+This project demonstrates my ability to design and develop a functional mobile application using Android Studio, Java, and SQLite. It highlights my understanding of user-centered design, problem solving, and building real-world applications.
