@@ -15,8 +15,12 @@
 - 🔐 User authentication (login & account creation)  
 - 📩 SMS notification system for low inventory alerts  
 - ⚙️ Runtime permission handling (allow/deny SMS)  
-- 🎯 User-centered UI design with clean and simple navigation  
+- 🎯 User-centered UI design with clean and simple navigation
 
+---
+## 🎥 Live Demo
+
+*Demo video coming soon*
 
 ---
 
