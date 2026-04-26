@@ -17,13 +17,6 @@
 - ⚙️ Runtime permission handling (allow/deny SMS)  
 - 🎯 User-centered UI design with clean and simple navigation  
 
----
-
-## 🎥 Live Demo (Video)
-
-> *(Optional but powerful — you can add a YouTube link later)*  
-> Example:
-> [Watch Demo](https://your-video-link-here)
 
 ---
 
