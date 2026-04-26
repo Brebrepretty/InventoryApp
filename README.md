@@ -1,127 +1,151 @@
-# Inventory App (Android)
+# 📦 Inventory App (Android)
 
-## Overview
-
-The Inventory App is a mobile application designed to help users keep track of items for personal use or small business management. The main goal of this app is to give users a simple and organized way to manage inventory without making it overly complicated.
-
-Users are able to create an account, log in securely, add items, update quantities, delete items, and view all stored inventory in one place. The app also includes an optional SMS notification feature that alerts users when inventory is low. This helps users stay aware of their stock and avoid running out of important items.
-
----
-
-## Features
-
-- User authentication (login & account creation)
-- Full CRUD functionality (Create, Read, Update, Delete)
-- SQLite database for local storage
-- Inventory tracking with item name and quantity
-- SMS notification system for low inventory alerts
-- Permission handling (user can allow or deny SMS access)
+<p align="center">
+  <b>Android Inventory Tracking App built with Java & SQLite</b><br/>
+  Manage items, track quantities, and receive low-stock alerts via SMS
+</p>
 
 ---
 
-## User Needs & Goals
+## 🚀 Project Highlights
 
-This app was designed for users who need a straightforward way to track inventory. This could include students, small business owners, or anyone managing supplies at home.
-
-The main user needs addressed were:
-- Keeping track of items in one place
-- Easily adding, updating, and removing inventory
-- Viewing item quantities clearly
-- Receiving alerts when inventory is low
-
-The goal was to make everything simple, fast, and easy to understand without requiring technical knowledge.
+- 📱 Full Android application built in Android Studio  
+- 🗃️ SQLite database for persistent local storage  
+- 🔄 Complete CRUD functionality (Create, Read, Update, Delete)  
+- 🔐 User authentication (login & account creation)  
+- 📩 SMS notification system for low inventory alerts  
+- ⚙️ Runtime permission handling (allow/deny SMS)  
+- 🎯 User-centered UI design with clean and simple navigation  
 
 ---
 
-## Screens & Features
+## 🎥 Live Demo (Video)
 
-To support user needs, the app includes the following screens:
-
-- **Login Screen**
-  - Allows users to log in or create an account
-
-- **Inventory Dashboard**
-  - Add items  
-  - Update item quantities  
-  - Delete items  
-  - View inventory list  
-
-- **SMS Permission Screen**
-  - Allows users to enable or deny SMS notifications  
-
-The UI was designed to be clean and consistent across all screens. Buttons are clearly labeled, layouts are simple, and everything is easy to navigate.
+> *(Optional but powerful — you can add a YouTube link later)*  
+> Example:
+> [Watch Demo](https://your-video-link-here)
 
 ---
 
-## Development Approach
+## 🧠 Overview
 
-When coding the app, I focused on building each feature step by step instead of trying to do everything at once. I used Java and SQLite to handle data storage and made sure each function (add, update, delete) worked properly before moving on.
+The Inventory App is a mobile application designed to help users keep track of items for personal use or small business management. The goal of the app is to provide a simple, organized, and efficient way to manage inventory without unnecessary complexity.
 
-I also kept the code organized by separating responsibilities into different classes, such as using a `DatabaseHelper` for database operations. This made the app easier to manage and debug.
+Users can:
+- Create accounts and log in securely  
+- Add, update, and delete inventory items  
+- View stored inventory in one place  
+- Receive optional SMS alerts when stock is low  
 
 ---
 
-## Testing & Functionality
+## 👥 User Needs & Goals
 
-To test the app, I used the Android Emulator in Android Studio. I tested all major features including:
+This app was designed for users who need a straightforward way to track inventory, including students, small business owners, or individuals managing supplies at home.
 
-- Logging in and creating accounts  
+Key needs addressed:
+- Keeping all inventory in one place  
+- Quickly updating and managing items  
+- Viewing quantities clearly  
+- Receiving alerts for low stock  
+
+The main goal was simplicity, speed, and ease of use.
+
+---
+
+## 🧩 Features
+
+- User authentication system  
+- Inventory management (CRUD operations)  
+- SQLite database integration  
+- SMS alert system for low inventory  
+- Permission handling for SMS access  
+- Clean and responsive UI design  
+
+---
+
+## 🛠️ Development Approach
+
+I built the app step by step, focusing on one feature at a time instead of trying to complete everything at once. I used Java for development and SQLite for data storage.
+
+To keep the project organized, I separated logic into different classes, such as using a `DatabaseHelper` for database operations. This made the code easier to manage, test, and debug.
+
+---
+
+## 🧪 Testing & Functionality
+
+I tested the application using the Android Emulator in Android Studio.
+
+Tested features:
+- Login and account creation  
 - Adding items to the database  
 - Updating item quantities  
 - Deleting items  
 - SMS permission handling (allow and deny)  
 
-Testing is important because it helps catch errors early and ensures everything works as expected. I confirmed that the app continues to function even if SMS permission is denied, which improves user experience.
+Testing ensured that all features worked correctly. I also confirmed that the app continues functioning even when SMS permission is denied.
 
 ---
 
-## Challenges & Problem Solving
+## ⚡ Challenges & Problem Solving
 
-One challenge I faced was handling SMS permissions properly. I had to make sure the app would still work even if the user denied permission. To solve this, I implemented logic that allows the app to continue running normally without notifications.
+One major challenge was handling SMS permissions properly. I needed to make sure the app would still function if the user denied permission. I solved this by allowing the app to continue operating normally without notifications.
 
-Another challenge was keeping the UI consistent across all screens. I solved this by using simple layouts and reusing styles for buttons and text.
-
----
-
-## Key Strengths
-
-The part of the app I was most successful with was the full CRUD functionality (Create, Read, Update, Delete). The app allows users to manage inventory smoothly, and all operations update correctly in the database.
-
-I also focused on user-centered design by keeping the interface clean, simple, and easy to use.
+Another challenge was maintaining UI consistency across screens. I solved this by keeping layouts simple and reusing styles for buttons and text.
 
 ---
 
-## App Screenshots
+## 💪 Key Strengths
+
+- Fully functional CRUD system with real-time updates  
+- Clean, user-friendly interface  
+- Proper handling of Android permissions  
+- Organized and maintainable code structure  
+
+---
+
+## 📸 App Screenshots
 
 ### Login Screen
-![Login Screen](login.png)
+<p align="center">
+  <img src="login.png" width="250"/>
+</p>
 
-### Inventory Dashboard – Item Added
-![Item Added](add_item.png)
+### Inventory – Item Added / Updated / Deleted
+<p align="center">
+  <img src="add_item.png" width="250"/>
+  <img src="update_item.png" width="250"/>
+  <img src="delete_item.png" width="250"/>
+</p>
 
-### Inventory Dashboard – Item Updated
-![Item Updated](update_item.png)
-
-### Inventory Dashboard – Item Deleted
-![Item Deleted](delete_item.png)
-
-### SMS Permission – Allow
-![SMS Allow](sms_allow.png)
-
-### SMS Permission – Deny
-![SMS Deny](sms_deny.png)
+### SMS Permission
+<p align="center">
+  <img src="sms_allow.png" width="250"/>
+  <img src="sms_deny.png" width="250"/>
+</p>
 
 ---
 
-## Tech Stack
+## 🧰 Tech Stack
 
 - Java  
 - Android Studio  
-- SQLite Database  
+- SQLite  
 - Android SDK  
 
 ---
 
-## Conclusion
+## 🎯 What This Project Shows
 
-This project demonstrates my ability to design and develop a functional mobile application using Android Studio, Java, and SQLite. It highlights my understanding of user-centered design, problem solving, and building real-world applications.
+This project demonstrates my ability to:
+- Build a complete Android application from start to finish  
+- Design user-centered interfaces  
+- Work with databases and persistent storage  
+- Handle permissions and real-world app behavior  
+- Debug and test mobile applications effectively  
+
+---
+
+## 📌 Conclusion
+
+This project highlights my ability to design and develop a functional mobile application using Android Studio, Java, and SQLite. It reflects my understanding of real-world app development, problem solving, and user-focused design.
